@@ -1,0 +1,51 @@
+nav {
+    height: 100px;
+    background-color: aqua;
+    display: flex; /*alohida bosayam ketma ket qib beradi */
+    flex-direction: row-reverse; /* oxiridan boshidan yoki pastga tushurib beadi */
+    justify-content: space-between; /* Bu 2 ta karoba orasida uzun boshliq qoldiradi 
+    va yana space-aroun bor bu boshidan 2 ta kantent ortasidan va oxirgi kantent oxiridan joy qoldiradi*/
+    align-items: center; /* buni y oqi boyicha ortaga boshiga oxiriga qoyishimiz mumkin */
+    position: fixed; /* Bu karobkani qotirib beradi pastdagi parametrlarga asosan (left top..)*/
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1; /* karobkani ustma ust qilish */
+}
+
+section div {
+    background-color: khaki;
+}
+
+section {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(
+        4,
+        1fr
+    ); /* bu yonga 4 taga bolib bir xil razmerdan qib beradi */
+    gap: 10 px; /* bu osha 4 ta bola divlarni orasi */
+    grid-template-rows: 100px;
+}
+
+.box-1 {
+    width: 150px;
+    height: 200px;
+    background-color: aqua;
+    position: relative; /* karobkani turgan joyidan 4 ta tomondan surish */
+    top: 50px;
+    left: 30px;
+    bottom: 50px;
+
+    margin-top: 10px;
+}
+
+.box-2 {
+    width: 30px;
+    height: 60px;
+    background-color: red;
+    position: absolute; /*  bu asosan realitiveni ichida boladi agarda ichida bomasa uni ona divi body boladi*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

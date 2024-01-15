@@ -1,0 +1,66 @@
+h3 {
+    color: aqua;
+}
+
+h1 {
+    color: brown;
+    background-color: blueviolet;
+    text-align: center;
+    font-style: italic; /* textning stili */
+    text-decoration: underline; /* text stili pastgi chiziq yoki xatodek korsatadigan ciziq */
+
+    font-size: 50px; /* Olchami */
+}
+h2 {
+    color: yellow;
+}
+.ikkinchi {
+    color: red;
+}
+
+#birinchi {
+    color: chocolate;
+    font-weight: bold; /* Qoratirib yoki qalinligi */
+}
+
+.asosiy1 {
+    display: inline-block; /* Bundan tashqar inline va blockga bolinadi
+    inline bu asosan a tegi yoki img tegi bn ishlatilinadi inline va block-inline ketma ket yozishda 
+    ishlatilinadi a block esa butun bir joyni egallaydi enli joyni*/
+    box-sizing: border-box; /* karobka umumiy eni 300 px bo'ladi border va paddinglar sabab uzun bb ketmaydi*/
+    width: 300px; /* karobka eni */
+    height: 250px; /*  karobka boyi */
+    background-color: yellow;
+    padding: 30px;
+    /*padding-left: 60px; chap
+   padding-top: 60px; tepadan ichki chegaragacha
+   padding-right: 150px; ong tarafdan 
+   padding-bottom: 150px; pasttan */
+    /* padding: 10px 30px; birinchisi tepa past ikkinchisi 2 ta yon*/
+
+    /* border-width: 10px; /* chegara qalinligi 
+    border-style: solid; /* chegara shaffofligi 
+    border-color: chartreuse; */
+
+    border: 10px solid red;
+    margin-top: 30px; /* bu tashqi kontent va chegaragacha bo'lgan masofa bu ham peddingga oxshab ishlidi */
+}
+
+.btn {
+    color: blueviolet;
+    padding: 3px 6px;
+    cursor: pointer; /* mishka holati */
+    border: solid 3px red;
+    border-radius: 7px; /* burchak holati */
+    background-color: black;
+    text-transform: capitalize; /* Textni faqat bosh harfini kotta yo hammasini kotta yo kichik harf qilish */
+    transition: all 0.2s ease; /* bu ozgarish vaqti va ayni qaysilari ozgarishi all hammasi yoki biz faqat */
+    /* background colorni berib qoyishimiz mumkin */
+}
+.btn:hover {
+    background-color: blue;
+    border: pointer 5px yellow;
+    color: black;
+    font-weight: bold;
+    padding: 2px 10px;
+}
